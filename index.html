@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="Styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>✨ Interactive Web Page ✨</h1>
+    <button id="themeToggle">🌓 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- 🎮 Interactive Feature 1: Dark Mode Toggle -->
+    <section class="feature">
+      <h2>🌓 Dark Mode Toggle</h2>
+      <p>Click the button above to toggle between light and dark themes!</p>
+    </section>
+
+    <!-- 🎮 Interactive Feature 2: FAQ Accordion -->
+    <section class="feature" id="faqSection">
+      <h2>FAQ Section (Click to Expand)</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">
+          JavaScript is a programming language that enables interactive web pages. It’s part of the core web technologies alongside HTML and CSS.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do event listeners work?</button>
+        <div class="faq-answer">
+          Event listeners wait for a specific user action (like a click or keypress) and then execute a function in response.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I use JavaScript for form validation?</button>
+        <div class="faq-answer">
+          Yes! JavaScript lets you validate forms in real-time and show custom error messages without reloading the page.
+        </div>
+      </div>
+    </section>
+
+    <!-- 📋 Form Validation Section -->
+    <section class="feature" id="formSection">
+      <h2>📋 Register Form (Try Submitting Invalid Data)</h2>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <span class="error" id="passwordError"></span>
+          <small>Password must be at least 8 characters with 1 number and 1 special character.</small>
+        </div>
+
+        <button type="submit">✅ Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="Script/script.js"></script>
+</body>
+</html>
